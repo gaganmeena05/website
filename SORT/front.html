@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="front_style.css">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </head>
+<body style="font-family: Maison Neue,sans-serif; background-color: #181c1d;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"  style="background-color: #2e3233; height: 80px;">
+        <div class="container-fluid">
+          <a href="#" style="font-family: Trump Gothic East,sans-serif; font-size: 30px; letter-spacing: 1px; color: red; text-decoration: none; display: block;">SORT</a> 
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-info" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div style="text-align: center; margin-top: 70px;">
+        <div style="display: inline-block;">
+          <a class="a1" onclick="moveon('Bubble Sort')">BS</a>
+          <p class="a2"> Bubble Sort <br>Time Complixity : θ(n^2)</p>
+        </div>
+        <div style="display: inline-block; margin-left: 200px; margin-right: 200px;">
+        <a class="a1" onclick="moveon('Selection Sort')">SS</a>
+        <p class="a2"> Selection Sort <br>Time Complixity : θ(n^2)</p>
+        </div>
+        <div style="display: inline-block;">
+          <a class="a1" onclick="moveon('Insertion Sort')">IS</a>
+          <p class="a2"> Insertion Sort <br>Time Complixity : θ(n^2)</p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 70px;">
+        <div style="display: inline-block;">
+          <a class="a1" onclick="moveon('Merge Sort')">MS</a>
+          <p class="a2"> Merge Sort <br>Time Complixity : θ(n log(n))</p>
+        </div>
+        <div style="display: inline-block; margin-left: 200px; margin-right: 200px;">
+        <a class="a1" onclick="moveon('Quick Sort')">QS</a>
+        <p class="a2"> Quick Sort <br>Time Complixity : θ(n log(n))</p>
+        </div>
+        <div style="display: inline-block;">
+          <a class="a1" onclick="moveon('Heap Sort')">HS</a>
+          <p class="a2"> Heap Sort <br>Time Complixity : θ(n log(n))</p>
+        </div>
+      </div>
+</body>
+<script>
+  function moveon(x)
+  {
+    window.location.href="input.html?"+x;
+  }
+</script>
+</html>
